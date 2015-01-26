@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Unit:</strong>
+  <%= @transaction.unit_id %>
+</p>
+
+<p>
+  <strong>Employee:</strong>
+  <%= @transaction.employee_id %>
+</p>
+
+<p>
+  <strong>Contribution:</strong>
+  <%= @transaction.contribution_id %>
+</p>
+
+<p>
+  <strong>Cocontri:</strong>
+  <%= @transaction.cocontri %>
+</p>
+
+<p>
+  <strong>Subcontri:</strong>
+  <%= @transaction.subcontri %>
+</p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @transaction.date %>
+</p>
+
+<p>
+  <strong>Remark:</strong>
+  <%= @transaction.remark %>
+</p>
+
+<%= link_to 'Edit', edit_transaction_path(@transaction) %> |
+<%= link_to 'Back', transactions_path %>

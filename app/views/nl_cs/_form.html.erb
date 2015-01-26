@@ -1,0 +1,25 @@
+<%= form_for(@nlc) do |f| %>
+  <% if @nlc.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@nlc.errors.count, "error") %> prohibited this nlc from being saved:</h2>
+
+      <ul>
+      <% @nlc.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :id %><br>
+    <%= f.number_field :id %>
+  </div>
+  <div class="field">
+    <%= f.label :nlc_no %><br>
+    <%= f.number_field :nlc_no %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
