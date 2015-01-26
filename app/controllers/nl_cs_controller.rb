@@ -69,6 +69,6 @@ class NlCsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def nlc_params
-      params.require(:nlc).permit(:id, :nlc_no)
+      params.require(:nlc).permit(:nlc_no)
     end
 end

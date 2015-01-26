@@ -18,7 +18,7 @@ class NlCsControllerTest < ActionController::TestCase
 
   test "should create nlc" do
     assert_difference('Nlc.count') do
-      post :create, nlc: { id: @nlc.id, nlc_no: @nlc.nlc_no }
+      post :create, nlc: { nlc_no: @nlc.nlc_no }
     end
 
     assert_redirected_to nlc_path(assigns(:nlc))
@@ -35,7 +35,7 @@ class NlCsControllerTest < ActionController::TestCase
   end
 
   test "should update nlc" do
-    patch :update, id: @nlc, nlc: { id: @nlc.id, nlc_no: @nlc.nlc_no }
+    patch :update, id: @nlc, nlc: { nlc_no: @nlc.nlc_no }
     assert_redirected_to nlc_path(assigns(:nlc))
   end
 

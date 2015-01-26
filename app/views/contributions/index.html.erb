@@ -5,7 +5,6 @@
 <table>
   <thead>
     <tr>
-      <th>Id</th>
       <th>Type</th>
       <th colspan="3"></th>
     </tr>
@@ -14,7 +13,6 @@
   <tbody>
     <% @contributions.each do |contribution| %>
       <tr>
-        <td><%= contribution.id %></td>
         <td><%= contribution.type %></td>
         <td><%= link_to 'Show', contribution %></td>
         <td><%= link_to 'Edit', edit_contribution_path(contribution) %></td>

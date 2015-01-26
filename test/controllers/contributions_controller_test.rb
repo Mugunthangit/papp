@@ -18,7 +18,7 @@ class ContributionsControllerTest < ActionController::TestCase
 
   test "should create contribution" do
     assert_difference('Contribution.count') do
-      post :create, contribution: { id: @contribution.id, type: @contribution.type }
+      post :create, contribution: { type: @contribution.type }
     end
 
     assert_redirected_to contribution_path(assigns(:contribution))
@@ -35,7 +35,7 @@ class ContributionsControllerTest < ActionController::TestCase
   end
 
   test "should update contribution" do
-    patch :update, id: @contribution, contribution: { id: @contribution.id, type: @contribution.type }
+    patch :update, id: @contribution, contribution: { type: @contribution.type }
     assert_redirected_to contribution_path(assigns(:contribution))
   end
 
