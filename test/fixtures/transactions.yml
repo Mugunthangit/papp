@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  unit_id: 1
+  employee_id: 1
+  contribution_id: 1
+  cocontri: 1
+  subcontri: 1
+  date: 2015-01-26
+  remark: MyString
+
+two:
+  unit_id: 1
+  employee_id: 1
+  contribution_id: 1
+  cocontri: 1
+  subcontri: 1
+  date: 2015-01-26
+  remark: MyString

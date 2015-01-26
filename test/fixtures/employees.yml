@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  id: 1
+  pran_no: MyString
+  name: MyString
+  details: MyString
+
+two:
+  id: 1
+  pran_no: MyString
+  name: MyString
+  details: MyString
